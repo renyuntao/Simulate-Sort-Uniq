@@ -2,7 +2,7 @@
 Simulate the linux command `sort`.      
 # Synopsis       
 **Usage:**      
-simulate \[-ih\] [-o output\_file] input\_file          
+simulatesort \[-ih\] [-o output\_file] input\_file          
 **Parameter:**         
 -i: Case insensitive sorting.Default is case sensitive sorting.     
 -o: Specify the output file.Default is **sorted.txt**.      
@@ -12,5 +12,10 @@ simulate \[-ih\] [-o output\_file] input\_file
 Run the program as        
 ```
 $ make      
-$ ./simulate [-ih] [-o output_file] input_file     
+$ ./simulatesort [-ih] [-o output_file] input_file     
 ```          
+**Example:**         
+```
+$ make      
+$ ./simulatesort example.txt       
+```
