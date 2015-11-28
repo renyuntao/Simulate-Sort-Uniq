@@ -1,21 +1,40 @@
 # Description
-Simulate the linux command `sort`.      
+Simulate the linux command `sort` and `uniq`.      
 # Synopsis       
-**Usage:**      
-simulatesort \[-ih\] [-o output\_file] input\_file          
+**mysort usage:**      
+mysort \[-ih\] [-o output\_file] input\_file          
 **Parameter:**         
 **-i**: Case insensitive sorting.Default is case sensitive sorting.     
 **-o**: Specify the output file.Default is **sorted.txt**.      
 **-h**: See help      
 **P.S.** *input\_file* is the file that you want to sort.         
+
+------
+**myuniq usage:**        
+myuniq \[-h\] \[-o output\_file\] input\_file        
+**Parameter:**         
+**-o**: Specify the output file.Default is **uniq.txt**.        
+**-h**: See help.      
 # How to run the program?
-Run the program as        
+Run mysort as        
 ```
-$ make      
-$ ./simulatesort [-ih] [-o output_file] input_file     
+$ make mysort      
+$ ./mysort [-ih] [-o output_file] input_file     
 ```          
 **Example:**         
 ```
-$ make      
-$ ./simulatesort example.txt       
+$ make mysort      
+$ ./mysort sort_example.txt       
+```      
+
+-----------
+Run myuniq as       
+```
+$ make myuniq      
+$ ./myuniq [-o output_file] [-h] input_file       
+```
+**Example:**          
+```
+$ make myuniq         
+$ ./myuniq uniq_example.txt        
 ```

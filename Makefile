@@ -1,11 +1,16 @@
 CC = g++
-OBJ = SimulateSort.o
 
-simulatesort: $(OBJ)
-	g++ -o $@ $^
+mysort: mysort.o
+	$(CC) -o $@ $^
 
-%.o: %.cxx
-	g++ -c -o $@ $^
+mysort.o: SimulateSort.cxx
+	$(CC) -c -o $@ $^
+
+myuniq: myuniq.o
+	$(CC) -o $@ $^
+
+myuniq.o: SimulateUniq.cxx
+	$(CC) -c -o $@ $^
 
 clean:
-	rm simulatesort *.o
+	rm *.o

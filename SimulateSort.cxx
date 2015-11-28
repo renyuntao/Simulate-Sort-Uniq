@@ -8,6 +8,7 @@
 using std::endl;
 using std::cout;
 
+
 /*
  * Case sensitive Quick Sort
  *
@@ -166,7 +167,7 @@ int main(int argc,char **argv)
 	char *output_file;
 	char default_output_file[] = "sorted.txt";
 
-	int iflag = 0, hflag = 0, oflag = 0;
+	int iflag = 0, hflag = 0, oflag = 0, uflag = 0;
 	int c;
 	while((c=getopt(argc,argv,"iho:")) != -1)
 	{
