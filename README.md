@@ -15,6 +15,7 @@ myuniq \[-h\] \[-o output\_file\] input\_file
 **Parameter:**         
 **-o**: Specify the output file.Default is **uniq.txt**.        
 **-h**: See help.      
+**P.S.** *intput\_file* is the file that you want to sort.        
 # How to run the program?
 Run mysort as        
 ```
